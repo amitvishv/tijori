@@ -21,5 +21,5 @@ class HistoricalPriceViews(View):
                                                                                                     'company__fincode',
                                                                                                     'company__name',
                                                                                                     'price',
-                                                                                                    'date_time')
+                                                                                                    'date_time')[0:5]
         return JsonResponse({'response': list(data)}, status=200, safe=False)
